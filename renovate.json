@@ -16,12 +16,8 @@
       "matchDatasources": [
         "docker"
       ],
-      "matchDepNames": [
-        "node", "cimg/node"
-      ],
-      "matchPackagePatterns": [
-        "/node$", "cimg/node"
-      ]
+      "matchPackageNames": ["cimg/node", "node"],
+      "versioning": "node"
     },
     {
       "groupName": "Jest",
