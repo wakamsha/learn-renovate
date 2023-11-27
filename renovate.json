@@ -1,7 +1,7 @@
 {
-  "enabled": false,
+  "enabled": true,
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
+  "extends": ["config:recommended"],
   "timezone": "Asia/Tokyo",
   "separateMultipleMajor": true,
   "separateMinorPatch": true,
@@ -9,7 +9,6 @@
     {
       "groupName": "nodeJs",
       "extends": ["group:nodeJs"],
-      "matchDatasources": ["docker"],
       "matchPackageNames": ["cimg/node"],
       "versioning": "node"
     },
