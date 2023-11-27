@@ -8,8 +8,9 @@
   "packageRules": [
     {
       "groupName": "nodeJs",
-      "matchPackageNames": ["cimg/node"],
-      "versioning": "node"
+      "extends": ["group:nodeJs"],
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["cimg/node"]
     },
     {
       "groupName": "Jest",
