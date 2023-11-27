@@ -17,13 +17,11 @@
         "docker"
       ],
       "matchDepNames": [
-        "node"
+        "node", "cimg/node"
       ],
       "matchPackagePatterns": [
-        "/node$"
-      ],
-      "matchPackageNames": ["cimg/node"],
-      "versioning": "node"
+        "/node$", "cimg/node"
+      ]
     },
     {
       "groupName": "Jest",
