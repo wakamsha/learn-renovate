@@ -31,7 +31,7 @@ commands:
     steps:
       - run:
           name: Execute npm install
-          command: npm install
+          command: npm install --engine-strict=false
   # ユニットテストを実行する。
   unit_test:
     steps:
