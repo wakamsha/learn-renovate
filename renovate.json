@@ -8,11 +8,6 @@
   "packageRules": [
     {
       "commitMessageTopic": "Node.js",
-      "excludePackageNames": [
-        "calico/node",
-        "docker.io/calico/node",
-        "kindest/node"
-      ],
       "matchDatasources": [
         "docker"
       ],
