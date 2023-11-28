@@ -6,7 +6,7 @@ orbs:
 executors:
   base:
     docker:
-      - image: cimg/node:18.13.0
+      - image: cimg/node:20.10.0
         environment:
           TZ: "Asia/Tokyo"
     working_directory: ~/workspace
@@ -31,7 +31,7 @@ commands:
     steps:
       - run:
           name: Execute npm install
-          command: npm install
+          command: npm install --engine-strict=false
   # ユニットテストを実行する。
   unit_test:
     steps:
