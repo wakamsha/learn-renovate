@@ -31,9 +31,7 @@ jobs:
       - run:
           name: Install pnpm
           command: |
-            version=$(cat package.json | jq -r .engines.pnpm)
-            com="corepack enable && corepack prepare pnpm@$version --activate"
-            eval ${com}
+            corepack enable && corepack prepare pnpm@10.4.1 --activate"
 
       # Install dependencies (monorepo root)
       - run:
