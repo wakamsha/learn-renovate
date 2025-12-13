@@ -15,8 +15,8 @@ importers:
   apps/fw:
     devDependencies:
       '@react-router/dev':
-        specifier: 7.0.0
-        version: 7.0.0(react-router@7.0.0(react@19.2.3))(typescript@5.7.2)(vite@5.4.21)
+        specifier: 7.0.2
+        version: 7.0.2(react-router@7.0.0(react@19.2.3))(typescript@5.7.2)(vite@5.4.21)
       lefthook:
         specifier: 2.0.8
         version: 2.0.8
@@ -347,13 +347,13 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@react-router/dev@7.0.0':
-    resolution: {integrity: sha512-ymepoSTlAE+yNHLW2cJam3Ur9pcHsL/8cAYSprQtN0hLX4395DTfjxSpy42kDHbTM8cpWKHfyyIBXjPAv3V0DQ==}
+  '@react-router/dev@7.0.2':
+    resolution: {integrity: sha512-uT9OVTGJAtOHGSvAlES4Y2HLqLQ7pENffUhlS7Is7eEVWQeTfZei/1RXTnNwpLbwAuDEf7DHbINDeVLDdjP92w==}
     engines: {node: '>=20.0.0'}
     hasBin: true
     peerDependencies:
-      '@react-router/serve': ^7.0.0
-      react-router: ^7.0.0
+      '@react-router/serve': ^7.0.2
+      react-router: ^7.0.2
       typescript: ^5.1.0
       vite: ^5.1.0
       wrangler: ^3.28.2
@@ -365,11 +365,11 @@ packages:
       wrangler:
         optional: true
 
-  '@react-router/node@7.0.0':
-    resolution: {integrity: sha512-0WVVIo6mwgbF2v+2zXyKOkvYcOJzAmmh8uwASzlI4n1hQm0p9YQxajYKq1B55TIkkLv0ECSMyqY3TAzwISwpcA==}
+  '@react-router/node@7.0.2':
+    resolution: {integrity: sha512-6Of5M2wP9QgYlR+boR0ptPjh3UyfaNvPMKQihowTGjAjUZIoNqz4iBn8ClNsLFbT3KQewcnNTHi2p+Ou7S4ZyQ==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
-      react-router: 7.0.0
+      react-router: 7.0.2
       typescript: ^5.1.0
     peerDependenciesMeta:
       typescript:
@@ -1416,7 +1416,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@react-router/dev@7.0.0(react-router@7.0.0(react@19.2.3))(typescript@5.7.2)(vite@5.4.21)':
+  '@react-router/dev@7.0.2(react-router@7.0.0(react@19.2.3))(typescript@5.7.2)(vite@5.4.21)':
     dependencies:
       '@babel/core': 7.28.5
       '@babel/generator': 7.28.5
@@ -1427,7 +1427,7 @@ snapshots:
       '@babel/traverse': 7.28.5
       '@babel/types': 7.28.5
       '@npmcli/package-json': 4.0.1
-      '@react-router/node': 7.0.0(react-router@7.0.0(react@19.2.3))(typescript@5.7.2)
+      '@react-router/node': 7.0.2(react-router@7.0.0(react@19.2.3))(typescript@5.7.2)
       arg: 5.0.2
       babel-dead-code-elimination: 1.0.10
       chokidar: 4.0.3
@@ -1464,7 +1464,7 @@ snapshots:
       - supports-color
       - terser
 
-  '@react-router/node@7.0.0(react-router@7.0.0(react@19.2.3))(typescript@5.7.2)':
+  '@react-router/node@7.0.2(react-router@7.0.0(react@19.2.3))(typescript@5.7.2)':
     dependencies:
       '@mjackson/node-fetch-server': 0.2.0
       react-router: 7.0.0(react@19.2.3)
