@@ -1,0 +1,43 @@
+version: 2.1
+
+executors:
+  node-executor:
+    docker:
+      - image: cimg/node:22.14.0
+
+jobs:
+  renovate-job:
+    executor: node-executor
+    steps:
+      - checkout
+
+      # pnpm store cache
+      - restore_cache:
+          keys:
+            - pnpm-store-v1-{{ checksum "pnpm-lock.yaml" }}
+            - pnpm-store-v1-
+
+      # node_modules cache
+      - restore_cache:
+          keys:
+            - node-modules-v1-{{ checksum "pnpm-lock.yaml" }}
+            - node-modules-v1-
+
+      # Setup pnpm via Corepack
+      - run:
+          name: Enable Corepack
+          command: corepack enable
+
+      - run:
+          name: Install pnpm
+          command: |
+            version=$(cat package.json | jq -r .engines.pnpm)
+            com="corepack enable && corepack prepare pnpm@$version --activate"
+            eval ${com}
+
+      # Install dependencies (monorepo root)
+      - run:
+          name: Install dependencies
+          command: |
+            export DEVELOPER_READ_PACKAGES=${GITHUB_DEVELOPER_READ_PACKAGES}
+            pnpm install --frozen-lockfile
