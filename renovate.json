@@ -1,23 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "enabled": false,
-  "extends": ["config:recommended"],
+  "enabled": true,
+  "extends": ["config:recommended", ":semanticCommits"],
   "timezone": "Asia/Tokyo",
-  "labels": ["dependencies"],
-  "minor": {
-    "automerge": true
-  },
-  "patch": {
-    "automerge": true
-  },
-  "packageRules": [
-    {
-      "matchFileNames": ["examples/fw/package.json"],
-      "enabled": true
-    },
-    {
-      "matchFileNames": ["examples/lib/package.json"],
-      "enabled": true
-    }
-  ]
+  "separateMinorPatch": true
 }
