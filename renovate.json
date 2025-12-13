@@ -3,5 +3,11 @@
   "enabled": true,
   "extends": ["config:recommended", ":semanticCommits"],
   "timezone": "Asia/Tokyo",
-  "separateMinorPatch": true
+  "separateMinorPatch": true,
+  "packageRules": [
+    {
+      "groupName": "nodeJs",
+      "extends": ["group:nodeJs"]
+    }
+  ]
 }
