@@ -9,7 +9,7 @@
   },
   "packageManager": "pnpm@10.4.1",
   "devDependencies": {
-    "lefthook": "2.0.8",
+    "lefthook": "2.0.11",
     "typescript": "5.7.2"
   }
 }
