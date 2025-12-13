@@ -9,7 +9,7 @@
   },
   "packageManager": "pnpm@10.4.1",
   "devDependencies": {
-    "@react-router/dev": "7.0.0",
+    "@react-router/dev": "7.0.2",
     "lefthook": "2.0.8",
     "typescript": "5.7.2"
   }
