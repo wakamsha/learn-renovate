@@ -13,6 +13,6 @@
     "core": "pnpm -F '@learn-renovate/core'"
   },
   "devDependencies": {
-    "lefthook": "2.0.8"
+    "lefthook": "2.0.12"
   }
 }
